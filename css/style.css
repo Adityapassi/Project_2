@@ -283,7 +283,7 @@ footer .copy{
     position: relative;
 }
 
-label{
+.form-outline label{
     position: absolute;
     top:10px;
     left:10px;
@@ -292,12 +292,18 @@ label{
     
 }
 
-input:focus ~ label{
+.form-outline input:valid ~ label,
+.form-outline input:focus ~ label{
     top:-10px;
     font-size: 14px;
     color: var(--main-color);
     background-color: #fff;
 }
+
+.form-outline input:valid{
+    border: 1px solid var(--main-color);
+}
+
 
 .form-control:focus {
     color: #212529;
@@ -305,6 +311,23 @@ input:focus ~ label{
     border-color: var(--main-color);
     outline: 0;
     box-shadow: none;
+}
+
+.form-outline small{
+    width: 100%;
+    padding-left: 10px;
+    margin-top: 5px;
+    display: block ;
+    visibility: hidden;
+}
+.form-outline.error small{
+    color: #B22222;
+    visibility: visible;
+}
+
+.form-outline.success small{
+    color: #42ba96;
+    visibility: visible;
 }
 
 #register_form .btn1{
