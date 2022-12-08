@@ -62,6 +62,29 @@ a{
     z-index:-1;
 }
 
+.breadcrumb{
+    justify-content: center;
+    transform: translateY(100%);
+}
+ 
+.breadcrumb .breadcrumb-item a{
+    color: var(--main-color);
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.breadcrumb .breadcrumb-item.active{
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.banner h1{
+    color: var(--main-color);
+    text-align: center;
+    border-bottom: 3px solid var(--main-color);
+}
+
+
 /* Nav Bar : Start */
 #top{
     background: var(--main-color);
@@ -255,29 +278,16 @@ footer .copy{
 
 /* Sign In Page : Start */
 
+#subjects-banner,
+#signin-banner,
 #register-banner{
-    height: 40vh;
+    height: 50vh;
     background-image: url(../images/signup.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-#register-banner .breadcrumb{
-    justify-content: center;
-    transform: translateY(100%);
-}
- 
-#register-banner .breadcrumb .breadcrumb-item a{
-    color: var(--main-color);
-    font-weight: bolder;
-    font-size: 20px;
-}
-
-#register-banner .breadcrumb .breadcrumb-item.active{
-    font-weight: bolder;
-    font-size: 20px;
-}
 
 #register_form .form-outline{
     position: relative;
@@ -338,6 +348,23 @@ footer .copy{
 
 #register_form .btn1:hover{
     box-shadow :inset 200px 0 0 0 #660494;   
+}
+
+/* Sign up page : End */
+
+/* Sign in page : Start */
+#signin-banner{
+    background-image: url(../images/subject.jpg);
+     height: 60vh;
+   
+}
+
+/* Sign in page : End */
+
+/* Subjects Page : Start */
+
+#subjects-banner{
+    background-image: url(../images/subject.jpg);
 }
 
 /* Media Query */
