@@ -293,6 +293,7 @@ footer .copy{
 
 /* Sign In Page : Start */
 
+#contactus-banner,
 #aboutus-banner,
 #subjects-banner,
 #signin-banner,
@@ -318,6 +319,12 @@ footer .copy{
     
 }
 
+.form-outline textarea{
+    resize: none;
+}
+
+.form-outline textarea:valid ~ label,
+.form-outline textarea:focus ~ label,
 .form-outline input:valid ~ label,
 .form-outline input:focus ~ label{
     top:-10px;
@@ -472,6 +479,12 @@ footer .copy{
 #aboutus .card-footer span{
     display: block;
     font-weight: bold;
+}
+/* AboutUs : END */
+/* Contact Us :Start */
+
+#contactus-banner{
+    background-image: url(../images/contactus.jpg);
 }
 
 
